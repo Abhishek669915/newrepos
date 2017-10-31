@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15px">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/curr_college"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="college app" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/llMajor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/major1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 percentage" />
+
+            <EditText
+                android:id="@+id/major2"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#bbb"
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llPopulation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/population1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 percentage" />
+
+            <Spinner
+                android:id="@+id/spinnerPop"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:background="#bbb"
+                android:prompt="@string/selectionPop"
+                android:textColor="#fff" >
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lltuition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tuition1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="exams cleared" />
+
+            <Spinner
+                android:id="@+id/spinnerTuition"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:background="#bbb"
+                android:prompt="@string/selectionTuition"
+                android:textColor="#fff" >
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llRegion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/region1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="region" />
+
+            <Spinner
+                android:id="@+id/spinnerRegion"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:background="#bbb"
+                android:prompt="@string/selectionRegion"
+                android:textColor="#fff" >
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llSetting"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/setting1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="option" />
+
+            <Spinner
+                android:id="@+id/spinnerSetting"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:background="#bbb"
+                android:prompt="@string/selectionSetting"
+                android:textColor="#000" >
+            </Spinner>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15px" >
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="search"         />
+    </RelativeLayout>
+
+</LinearLayout>
