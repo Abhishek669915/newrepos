@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a Perticular Stream"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+    <TableLayout
+        android:layout_below="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <ImageButton
+                android:id="@+id/engineering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:src="@drawable/engineerin"/>
+            <ImageButton
+                android:id="@+id/medicine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/medica"
+                android:onClick="onClick"/>
+        </TableRow>
+        <TableRow>
+            <ImageButton
+                android:id="@+id/law"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/law"
+                android:onClick="onClick"/>
+            <ImageButton
+                android:id="@+id/management"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:src="@drawable/management" />
+        </TableRow>
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/hotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:src="@drawable/hotel" />
+
+            <ImageButton
+                android:id="@+id/architecture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:src="@drawable/architecture" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

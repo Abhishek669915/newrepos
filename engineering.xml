@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/idLayout"
+    android:layout_weight="7"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/mainmsg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/colorButtonNormal"
+        android:text="SELECT A COURSE"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/ms1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_dark"
+        android:text="DEGREE COURSES"
+        android:textColor="?android:attr/actionMenuTextColor"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/degree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></ListView>
+
+    <TextView
+        android:id="@+id/ms2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_dark"
+        android:text="DIPLOMA COURSES"
+        android:textColor="?attr/actionMenuTextColor"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/diploma"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></ListView>
+
+    <TextView
+        android:id="@+id/ms3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_dark"
+        android:text="CERTIFICATE COURSES"
+        android:textColor="?android:attr/actionMenuTextColor"
+        android:textColorHighlight="?attr/actionMenuTextColor"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/cirtificate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></ListView>
+</LinearLayout>
